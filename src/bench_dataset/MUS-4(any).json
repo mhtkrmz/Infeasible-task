@@ -1,0 +1,3322 @@
+[
+  {
+    "base_query_sentence": "I am looking for a Chevrolet Extended Cab Pickup with a AUTOMATIC transmission and rear wheel drive.",
+    "full_query_sentence": "I am looking for a Chevrolet Extended Cab Pickup with a AUTOMATIC transmission and rear wheel drive, gets at least 20 highway MPG, is large size, has MSRP at most $24,515, runs on flex-fuel (unleaded/E85).",
+    "additional_constraints": [
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 20
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 24515
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "flex-fuel (unleaded/E85)"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 20,
+        "weight": 0.16765467783968296
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.3318273274571206
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 24515,
+        "weight": 0.3770969869897481
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "flex-fuel (unleaded/E85)",
+        "weight": 0.12342100771344829
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Engine Fuel Type",
+      "op": "==",
+      "value": "flex-fuel (unleaded/E85)",
+      "weight": 0.12342100771344829
+    },
+    "recommended_car": {
+      "Make": "Chevrolet",
+      "Model": "Silverado 1500 Classic",
+      "Year": 2007,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "rear wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Extended Cab Pickup",
+      "city mpg": 14,
+      "highway MPG": 20,
+      "MSRP": 21465
+    },
+    "meta": {
+      "U_size": 43,
+      "tight_score": 17,
+      "drop_counts": [
+        1,
+        2,
+        12,
+        2
+      ]
+    },
+    "persona": "I want a Chevrolet Extended Cab Pickup with an automatic transmission and rear-wheel drive\u2014something straightforward and easy to live with. I\u2019m pretty firm on keeping MSRP at no more than $24,515, because budget discipline matters most to me. I strongly prefer it to be a Large truck, though I could compromise a little on size if the overall deal is right. I\u2019m aiming for at least 20 highway MPG, but that\u2019s more of a \u201cnice floor\u201d than a hard line. I\u2019d like it to run on flex-fuel (unleaded/E85), but I\u2019m flexible there if everything else fits."
+  },
+  {
+    "base_query_sentence": "I am looking for a Toyota Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Toyota Sedan with a AUTOMATIC transmission and front wheel drive, gets at least 29 city MPG, is from 2017 or newer, has MSRP at most $18,935, is a Corolla.",
+    "additional_constraints": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 29
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 18935
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Corolla"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 29,
+        "weight": 0.17481024240613902
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017,
+        "weight": 0.5175919913568687
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 18935,
+        "weight": 0.14076181673012952
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Corolla",
+        "weight": 0.16683594950686279
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "MSRP",
+      "op": "<=",
+      "value": 18935,
+      "weight": 0.14076181673012952
+    },
+    "recommended_car": {
+      "Make": "Toyota",
+      "Model": "Corolla",
+      "Year": 2017,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Compact",
+      "Vehicle Style": "Sedan",
+      "city mpg": 30,
+      "highway MPG": 40,
+      "MSRP": 19335
+    },
+    "meta": {
+      "U_size": 85,
+      "tight_score": 7,
+      "drop_counts": [
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    "persona": "I\u2019m looking for a Toyota sedan with an automatic transmission and front-wheel drive, mainly for dependable daily commuting. The one thing I\u2019m strict about is 2017 or newer, because I really want something modern and hassle-free. I\u2019m targeting at least 29 city MPG, but I can be a bit forgiving if the car is otherwise a great match. I\u2019d like it to be a Corolla, though I\u2019m reasonably open-minded if a similar Toyota sedan checks my key boxes. For MSRP, I\u2019m aiming for no more than $18,935, but I can stretch slightly if the value feels worth it."
+  },
+  {
+    "base_query_sentence": "I am looking for a Kia Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Kia Sedan with a AUTOMATIC transmission and front wheel drive, is from 2016 or newer, has MSRP at most $25,990, gets at least 37 highway MPG, is midsize size.",
+    "additional_constraints": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 25990
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 37
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016,
+        "weight": 0.3472816678703937
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 25990,
+        "weight": 0.2526762904305622
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 37,
+        "weight": 0.17938734895151995
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize",
+        "weight": 0.22065469274752417
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "highway MPG",
+      "op": ">=",
+      "value": 37,
+      "weight": 0.17938734895151995
+    },
+    "recommended_car": {
+      "Make": "Kia",
+      "Model": "Optima",
+      "Year": 2016,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 24,
+      "highway MPG": 35,
+      "MSRP": 22140
+    },
+    "meta": {
+      "U_size": 58,
+      "tight_score": 13,
+      "drop_counts": [
+        1,
+        4,
+        2,
+        6
+      ]
+    },
+    "persona": "I want a Kia sedan with an automatic transmission and front-wheel drive that feels current and sensible. I care a lot about it being 2016 or newer, since reliability and up-to-date features are important to me. I\u2019m trying to keep MSRP at or below $25,990, but I\u2019m moderately flexible if the car feels like a strong overall pick. I prefer a Midsize sedan for comfort and space, though I could compromise a bit on exact sizing if it drives well. I\u2019m aiming for at least 37 highway MPG, but I\u2019m the most willing to bend on that if the other priorities line up."
+  },
+  {
+    "base_query_sentence": "I am looking for a Nissan Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Nissan Sedan with a AUTOMATIC transmission and front wheel drive, gets at least 29 city MPG, gets at least 39 highway MPG, is from 2017 or newer, is midsize size.",
+    "additional_constraints": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 29
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 39
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 29,
+        "weight": 0.31871233882969735
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 39,
+        "weight": 0.18340767249994952
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017,
+        "weight": 0.13545617190094064
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize",
+        "weight": 0.3624238167694124
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2017,
+      "weight": 0.13545617190094064
+    },
+    "recommended_car": {
+      "Make": "Nissan",
+      "Model": "Sentra",
+      "Year": 2016,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 30,
+      "highway MPG": 40,
+      "MSRP": 18160
+    },
+    "meta": {
+      "U_size": 68,
+      "tight_score": 17,
+      "drop_counts": [
+        4,
+        4,
+        6,
+        3
+      ]
+    },
+    "persona": "I\u2019m searching for a Nissan sedan with an automatic transmission and front-wheel drive, with a focus on everyday usability. I\u2019m quite strict about it being Midsize, because I want that balance of space without feeling bulky. I also strongly want at least 29 city MPG, since stop-and-go efficiency matters a lot to me. At least 39 highway MPG is a real preference, but I can compromise some if the city mileage and overall fit are great. I\u2019d like 2017 or newer, but I\u2019m fairly flexible on the year if the car still feels solid and efficient."
+  },
+  {
+    "base_query_sentence": "I am looking for a Infiniti Sedan with a AUTOMATIC transmission and all wheel drive.",
+    "full_query_sentence": "I am looking for a Infiniti Sedan with a AUTOMATIC transmission and all wheel drive, is large size, runs on premium unleaded (required), is from 2010 or newer, has MSRP at most $49,830.",
+    "additional_constraints": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2010
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 49830
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.259362102945646
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)",
+        "weight": 0.21484305552522578
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2010,
+        "weight": 0.30061153215469094
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 49830,
+        "weight": 0.22518330937443737
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Engine Fuel Type",
+      "op": "==",
+      "value": "premium unleaded (required)",
+      "weight": 0.21484305552522578
+    },
+    "recommended_car": {
+      "Make": "Infiniti",
+      "Model": "M37",
+      "Year": 2011,
+      "Engine Fuel Type": "premium unleaded (recommended)",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "all wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Sedan",
+      "city mpg": 17,
+      "highway MPG": 24,
+      "MSRP": 49200
+    },
+    "meta": {
+      "U_size": 56,
+      "tight_score": 30,
+      "drop_counts": [
+        11,
+        2,
+        1,
+        16
+      ]
+    },
+    "persona": "I\u2019m looking for an Infiniti sedan with an automatic transmission and all-wheel drive\u2014something comfortable and confident in all conditions. I\u2019m pretty serious about it being 2010 or newer, since I want to avoid the headaches that can come with older luxury cars. I strongly prefer a Large sedan for that smooth, roomy feel, but I could bend slightly if the cabin still feels spacious. I want MSRP no more than $49,830, and I\u2019m mindful of that price point even if I\u2019m not absolutely rigid. Fuel-wise, I\u2019d prefer premium unleaded (required), but I can compromise toward something like \u201cpremium recommended\u201d if the rest of the car checks out."
+  },
+  {
+    "base_query_sentence": "I am looking for a Hyundai Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Hyundai Sedan with a AUTOMATIC transmission and front wheel drive, is a Sonata, gets at least 37 highway MPG, has MSRP at most $21,600, is from 2016 or newer.",
+    "additional_constraints": [
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Sonata"
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 37
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 21600
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Sonata",
+        "weight": 0.3819417837740438
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 37,
+        "weight": 0.14103032809164284
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 21600,
+        "weight": 0.2493905329063946
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016,
+        "weight": 0.22763735522791875
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "highway MPG",
+      "op": ">=",
+      "value": 37,
+      "weight": 0.14103032809164284
+    },
+    "recommended_car": {
+      "Make": "Hyundai",
+      "Model": "Sonata",
+      "Year": 2017,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 25,
+      "highway MPG": 36,
+      "MSRP": 21600
+    },
+    "meta": {
+      "U_size": 73,
+      "tight_score": 12,
+      "drop_counts": [
+        6,
+        2,
+        2,
+        2
+      ]
+    },
+    "persona": "I want a Hyundai Sonata sedan with an automatic transmission and front-wheel drive, mainly for a practical but comfortable daily ride. The Sonata part is my top priority\u2014I\u2019m not really looking to switch to another model. I\u2019m aiming to keep MSRP at or below $21,600, and I care about that budget, though I might stretch a little for the right trim or condition. I\u2019d strongly prefer 2016 or newer, because I want something relatively current. I\u2019m targeting at least 37 highway MPG, but I\u2019m flexible there if it still feels efficient overall."
+  },
+  {
+    "base_query_sentence": "I am looking for a Cadillac Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Cadillac Sedan with a AUTOMATIC transmission and front wheel drive, gets at least 16 city MPG, is a DeVille, has MSRP at most $46,045, is from 2005 or newer.",
+    "additional_constraints": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 16
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "DeVille"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 46045
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2005
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 16,
+        "weight": 0.20228007620760263
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "DeVille",
+        "weight": 0.2821897196456417
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 46045,
+        "weight": 0.16272312578903245
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2005,
+        "weight": 0.35280707835772324
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "MSRP",
+      "op": "<=",
+      "value": 46045,
+      "weight": 0.16272312578903245
+    },
+    "recommended_car": {
+      "Make": "Cadillac",
+      "Model": "DeVille",
+      "Year": 2005,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Sedan",
+      "city mpg": 16,
+      "highway MPG": 24,
+      "MSRP": 51600
+    },
+    "meta": {
+      "U_size": 42,
+      "tight_score": 7,
+      "drop_counts": [
+        1,
+        3,
+        1,
+        2
+      ]
+    },
+    "persona": "I\u2019m looking for a Cadillac sedan with an automatic transmission and front-wheel drive, with a classic comfort-first vibe. I\u2019m pretty firm on it being 2005 or newer, because I still want it to feel reasonably modern and dependable. I strongly prefer it to be a DeVille, but I can be somewhat open if something very close captures the same spirit. I need at least 16 city MPG, though I\u2019m not obsessing over squeezing every last mile per gallon. For MSRP, I\u2019m aiming for no more than $46,045, but I\u2019m the most willing to compromise on price if the car is truly the right one."
+  },
+  {
+    "base_query_sentence": "I am looking for a Mercedes-Benz 4dr SUV with a AUTOMATIC transmission and all wheel drive.",
+    "full_query_sentence": "I am looking for a Mercedes-Benz 4dr SUV with a AUTOMATIC transmission and all wheel drive, has MSRP at most $65,160, gets at least 23 highway MPG, is from 2017 or newer, is a GLE-Class.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 65160
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 23
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "GLE-Class"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 65160,
+        "weight": 0.40773963992068973
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 23,
+        "weight": 0.13821775217281212
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017,
+        "weight": 0.26167581795975037
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "GLE-Class",
+        "weight": 0.1923667899467477
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "highway MPG",
+      "op": ">=",
+      "value": 23,
+      "weight": 0.13821775217281212
+    },
+    "recommended_car": {
+      "Make": "Mercedes-Benz",
+      "Model": "GLE-Class",
+      "Year": 2017,
+      "Engine Fuel Type": "premium unleaded (required)",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "all wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 18,
+      "highway MPG": 22,
+      "MSRP": 54500
+    },
+    "meta": {
+      "U_size": 51,
+      "tight_score": 6,
+      "drop_counts": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    "persona": "I want a Mercedes-Benz 4-door SUV with an automatic transmission and all-wheel drive\u2014something premium but still practical. My biggest constraint is keeping MSRP at or below $65,160, because I don\u2019t want the price to creep into \u201ctoo much\u201d territory. I strongly prefer 2017 or newer so the tech and safety features feel current. I\u2019d like it to be a GLE-Class, but I can compromise a bit if another Mercedes SUV feels extremely similar in comfort and capability. I\u2019m aiming for at least 23 highway MPG, though I\u2019m flexible on that if it drives great and hits my other priorities."
+  },
+  {
+    "base_query_sentence": "I am looking for a Chevrolet Crew Cab Pickup with a AUTOMATIC transmission and four wheel drive.",
+    "full_query_sentence": "I am looking for a Chevrolet Crew Cab Pickup with a AUTOMATIC transmission and four wheel drive, has MSRP at most $43,164, gets at least 23 highway MPG, is large size, is from 2013 or newer.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 43164
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 23
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2013
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 43164,
+        "weight": 0.130291715342894
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 23,
+        "weight": 0.44821204148830013
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.26594764612546523
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2013,
+        "weight": 0.15554859704334062
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "MSRP",
+      "op": "<=",
+      "value": 43164,
+      "weight": 0.130291715342894
+    },
+    "recommended_car": {
+      "Make": "Chevrolet",
+      "Model": "Silverado 1500 Hybrid",
+      "Year": 2013,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "four wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Crew Cab Pickup",
+      "city mpg": 20,
+      "highway MPG": 23,
+      "MSRP": 44710
+    },
+    "meta": {
+      "U_size": 79,
+      "tight_score": 36,
+      "drop_counts": [
+        2,
+        20,
+        12,
+        2
+      ]
+    },
+    "persona": "I\u2019m looking for a Chevrolet Crew Cab Pickup with an automatic transmission and four-wheel drive, built for real-world utility. I\u2019m very strict about getting at least 23 highway MPG, because I don\u2019t want to feel punished at the pump on longer drives. I strongly prefer a Large truck since I need the space and presence, but I could compromise a touch if it still does the job. I\u2019d like it to be 2013 or newer, though that\u2019s more \u201cpreferred\u201d than absolute if the truck is a standout. For MSRP, I\u2019m aiming for no more than $43,164, but I\u2019m fairly flexible there if it truly delivers on efficiency and capability."
+  },
+  {
+    "base_query_sentence": "I am looking for a Ford Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Ford Sedan with a AUTOMATIC transmission and front wheel drive, is a Five Hundred, has MSRP at most $22,750, is from 2006 or newer, gets at least 19 city MPG.",
+    "additional_constraints": [
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Five Hundred"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 22750
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2006
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 19
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Five Hundred",
+        "weight": 0.30838801534973753
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 22750,
+        "weight": 0.15103280117495982
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2006,
+        "weight": 0.38455926037122423
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 19,
+        "weight": 0.15601992310407842
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "MSRP",
+      "op": "<=",
+      "value": 22750,
+      "weight": 0.15103280117495982
+    },
+    "recommended_car": {
+      "Make": "Ford",
+      "Model": "Five Hundred",
+      "Year": 2007,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Sedan",
+      "city mpg": 19,
+      "highway MPG": 26,
+      "MSRP": 23035
+    },
+    "meta": {
+      "U_size": 39,
+      "tight_score": 9,
+      "drop_counts": [
+        3,
+        4,
+        1,
+        1
+      ]
+    },
+    "persona": "I want a Ford sedan with an automatic transmission and front-wheel drive that feels like a solid, no-nonsense choice. I\u2019m pretty strict about it being 2006 or newer, since I want to avoid something that feels too dated. I also strongly prefer it to be a Five Hundred, because that\u2019s the specific style and vibe I\u2019m after. I\u2019m aiming for at least 19 city MPG, but I can compromise a little if the car is otherwise in great shape. For MSRP, I\u2019m trying to stay at or below $22,750, though I\u2019m somewhat flexible if the overall value is convincing."
+  },
+  {
+    "base_query_sentence": "I am looking for a Chevrolet Crew Cab Pickup with a AUTOMATIC transmission and rear wheel drive.",
+    "full_query_sentence": "I am looking for a Chevrolet Crew Cab Pickup with a AUTOMATIC transmission and rear wheel drive, gets at least 18 city MPG, runs on regular unleaded, is large size, is from 2015 or newer.",
+    "additional_constraints": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 18
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2015
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 18,
+        "weight": 0.13818634697309456
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.22004834018016123
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.29082156074773213
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2015,
+        "weight": 0.350943752099012
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "city mpg",
+      "op": ">=",
+      "value": 18,
+      "weight": 0.13818634697309456
+    },
+    "recommended_car": {
+      "Make": "Chevrolet",
+      "Model": "Silverado 1500",
+      "Year": 2017,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "rear wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Crew Cab Pickup",
+      "city mpg": 16,
+      "highway MPG": 23,
+      "MSRP": 37430
+    },
+    "meta": {
+      "U_size": 72,
+      "tight_score": 52,
+      "drop_counts": [
+        20,
+        14,
+        12,
+        6
+      ]
+    },
+    "persona": "I\u2019m looking for a Chevrolet Crew Cab Pickup with an automatic transmission and rear-wheel drive because I want something simple and dependable. My top priority is it being 2015 or newer, since I really want a more modern truck and I\u2019m not very willing to compromise on that. I also strongly prefer a Large size because space and road presence matter a lot to me. I want it to run on regular unleaded, and I\u2019m fairly set on that, though I could bend if the rest of the truck is perfect. For city MPG, I\u2019m aiming for at least 18, but I\u2019m pretty flexible there and can compromise if needed."
+  },
+  {
+    "base_query_sentence": "I am looking for a Audi 4dr SUV with a AUTOMATIC transmission and all wheel drive.",
+    "full_query_sentence": "I am looking for a Audi 4dr SUV with a AUTOMATIC transmission and all wheel drive, gets at least 19 city MPG, is large size, is from 2015 or newer, has MSRP at most $53,320.",
+    "additional_constraints": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 19
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2015
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 53320
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 19,
+        "weight": 0.3906263995459878
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.3200875873270441
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2015,
+        "weight": 0.19911544890518082
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 53320,
+        "weight": 0.09017056422178729
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "MSRP",
+      "op": "<=",
+      "value": 53320,
+      "weight": 0.09017056422178729
+    },
+    "recommended_car": {
+      "Make": "Audi",
+      "Model": "Q7",
+      "Year": 2017,
+      "Engine Fuel Type": "premium unleaded (required)",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "all wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 19,
+      "highway MPG": 25,
+      "MSRP": 54800
+    },
+    "meta": {
+      "U_size": 48,
+      "tight_score": 26,
+      "drop_counts": [
+        1,
+        18,
+        1,
+        6
+      ]
+    },
+    "persona": "I want an Audi 4-door SUV with an automatic transmission and all-wheel drive, mostly for comfort and confident handling year-round. The biggest thing for me is getting at least 19 city MPG, because efficiency in daily driving really matters and I\u2019m not eager to give that up. I also strongly prefer it to be Large, since I want the extra space and a more substantial feel. I\u2019d like it to be 2015 or newer, but I\u2019m somewhat flexible on the year if it checks my other priorities. I\u2019m aiming for an MSRP at most $53,320, but I\u2019m quite willing to compromise on price if the SUV is otherwise the right fit."
+  },
+  {
+    "base_query_sentence": "I am looking for a GMC 4dr SUV with a AUTOMATIC transmission and rear wheel drive.",
+    "full_query_sentence": "I am looking for a GMC 4dr SUV with a AUTOMATIC transmission and rear wheel drive, gets at least 15 city MPG, is large size, runs on regular unleaded, has MSRP at most $47,740.",
+    "additional_constraints": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 15
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 47740
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 15,
+        "weight": 0.12392554505300052
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.37690657585625
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.2146092110002731
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 47740,
+        "weight": 0.2845586680904765
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "city mpg",
+      "op": ">=",
+      "value": 15,
+      "weight": 0.12392554505300052
+    },
+    "recommended_car": {
+      "Make": "GMC",
+      "Model": "Suburban",
+      "Year": 1997,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "rear wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 12,
+      "highway MPG": 17,
+      "MSRP": 2468
+    },
+    "meta": {
+      "U_size": 57,
+      "tight_score": 29,
+      "drop_counts": [
+        15,
+        7,
+        1,
+        6
+      ]
+    },
+    "persona": "I\u2019m looking for a GMC 4-door SUV with an automatic transmission and rear-wheel drive that feels roomy and easy to live with. I\u2019m most focused on it being Large, because size and comfort are really important to me and I don\u2019t want to compromise much there. I also care a lot about keeping MSRP at or below $47,740, since I\u2019m trying to stay sensible on budget, though I could stretch a little for a great option. I prefer it to run on regular unleaded, and I\u2019m fairly committed to that for easier fueling and costs. For city MPG I\u2019m aiming for at least 15, but I\u2019m flexible on that and can compromise if everything else works."
+  },
+  {
+    "base_query_sentence": "I am looking for a Suzuki Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Suzuki Sedan with a AUTOMATIC transmission and front wheel drive, has MSRP at most $18,459, is from 2006 or newer, gets at least 18 city MPG, is midsize size.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 18459
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2006
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 18
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 18459,
+        "weight": 0.12078066299730283
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2006,
+        "weight": 0.11260708082736053
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 18,
+        "weight": 0.43444768388124944
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize",
+        "weight": 0.332164572294087
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2006,
+      "weight": 0.11260708082736053
+    },
+    "recommended_car": {
+      "Make": "Suzuki",
+      "Model": "Verona",
+      "Year": 2005,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 18,
+      "highway MPG": 25,
+      "MSRP": 17549
+    },
+    "meta": {
+      "U_size": 51,
+      "tight_score": 32,
+      "drop_counts": [
+        12,
+        1,
+        1,
+        18
+      ]
+    },
+    "persona": "I\u2019m searching for a Suzuki sedan with an automatic transmission and front-wheel drive as a practical everyday car. The biggest priorities for me are getting at least 18 city MPG and keeping it Midsize, because I want efficiency without giving up comfortable space. I\u2019m hoping to keep MSRP at most $18,459, but I\u2019m only mildly strict on price if the car is a strong match overall. I\u2019d like it to be 2006 or newer, though I\u2019m pretty flexible on the exact year compared to my fuel economy and size needs. Overall, I\u2019m trying to balance value and usability more than chasing anything fancy."
+  },
+  {
+    "base_query_sentence": "I am looking for a Volvo Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Volvo Sedan with a AUTOMATIC transmission and front wheel drive, gets at least 31 highway MPG, has MSRP at most $41,860, runs on premium unleaded (recommended), gets at least 21 city MPG.",
+    "additional_constraints": [
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 31
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 41860
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (recommended)"
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 21
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 31,
+        "weight": 0.29592783080554264
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 41860,
+        "weight": 0.3005183637094056
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (recommended)",
+        "weight": 0.1796813927970402
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 21,
+        "weight": 0.22387241268801159
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Engine Fuel Type",
+      "op": "==",
+      "value": "premium unleaded (recommended)",
+      "weight": 0.1796813927970402
+    },
+    "recommended_car": {
+      "Make": "Volvo",
+      "Model": "S60",
+      "Year": 2016,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 26,
+      "highway MPG": 38,
+      "MSRP": 34150
+    },
+    "meta": {
+      "U_size": 37,
+      "tight_score": 17,
+      "drop_counts": [
+        1,
+        2,
+        13,
+        1
+      ]
+    },
+    "persona": "I want a Volvo sedan with an automatic transmission and front-wheel drive that feels comfortable but still efficient. My two biggest deal-shapers are keeping MSRP at most $41,860 and getting at least 31 highway MPG, since I care a lot about value and road-trip efficiency and I\u2019m not very willing to compromise on those. I\u2019m also aiming for at least 21 city MPG, which matters, but I\u2019m a bit more flexible there than on highway mileage. Fuel type being premium unleaded (recommended) is something I\u2019d prefer, but it\u2019s not a hard requirement\u2014I\u2019m willing to compromise if the car is otherwise perfect. In general, I\u2019m looking for a smart, balanced pick that doesn\u2019t feel like a financial stretch."
+  },
+  {
+    "base_query_sentence": "I am looking for a Mazda 4dr SUV with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Mazda 4dr SUV with a AUTOMATIC transmission and front wheel drive, is from 2012 or newer, is midsize size, has MSRP at most $22,490, gets at least 28 highway MPG.",
+    "additional_constraints": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2012
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 22490
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 28
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2012,
+        "weight": 0.11174678497809558
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize",
+        "weight": 0.4432350979768517
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 22490,
+        "weight": 0.29150993870705216
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 28,
+        "weight": 0.15350817833800065
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2012,
+      "weight": 0.11174678497809558
+    },
+    "recommended_car": {
+      "Make": "Mazda",
+      "Model": "CX-7",
+      "Year": 2011,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 20,
+      "highway MPG": 28,
+      "MSRP": 21990
+    },
+    "meta": {
+      "U_size": 59,
+      "tight_score": 20,
+      "drop_counts": [
+        3,
+        4,
+        12,
+        1
+      ]
+    },
+    "persona": "I\u2019m looking for a Mazda 4-door SUV with an automatic transmission and front-wheel drive, mainly for a comfortable, practical daily ride. The most important thing for me is that it\u2019s Midsize, because I want that \u201cnot too big, not too small\u201d sweet spot and I\u2019m not keen to compromise there. I also care quite a bit about keeping MSRP at or below $22,490, since I\u2019m trying to stay budget-conscious, though I could stretch slightly for the right fit. I\u2019m aiming for at least 28 highway MPG, but I\u2019m moderately flexible on that if the SUV checks my main boxes. I\u2019d like it to be 2012 or newer, but that\u2019s the easiest one for me to compromise on if needed."
+  },
+  {
+    "base_query_sentence": "I am looking for a Mercedes-Benz Sedan with a AUTOMATIC transmission and rear wheel drive.",
+    "full_query_sentence": "I am looking for a Mercedes-Benz Sedan with a AUTOMATIC transmission and rear wheel drive, runs on premium unleaded (required), is from 2016 or newer, gets at least 23 city MPG, is a E-Class.",
+    "additional_constraints": [
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 23
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "E-Class"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)",
+        "weight": 0.38118152055679355
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016,
+        "weight": 0.17172116265207418
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 23,
+        "weight": 0.12019065477711105
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "E-Class",
+        "weight": 0.32690666201402124
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "city mpg",
+      "op": ">=",
+      "value": 23,
+      "weight": 0.12019065477711105
+    },
+    "recommended_car": {
+      "Make": "Mercedes-Benz",
+      "Model": "E-Class",
+      "Year": 2017,
+      "Engine Fuel Type": "premium unleaded (required)",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "rear wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 22,
+      "highway MPG": 30,
+      "MSRP": 52150
+    },
+    "meta": {
+      "U_size": 85,
+      "tight_score": 14,
+      "drop_counts": [
+        2,
+        1,
+        5,
+        6
+      ]
+    },
+    "persona": "I want a Mercedes-Benz sedan with an automatic transmission and rear-wheel drive, because I\u2019m after that classic smooth luxury feel. The biggest must-haves for me are that it takes premium unleaded (required) and that it\u2019s specifically an E-Class, since those are core to what I\u2019m looking for and I\u2019m not really willing to compromise on them. I\u2019d strongly prefer it to be 2016 or newer, but I could bend a little if everything else is perfect. I\u2019m aiming for at least 23 city MPG, though I\u2019m flexible on that and can compromise if the driving experience and model match are right. Overall, I\u2019m prioritizing the exact identity of the car over squeezing out a little extra efficiency."
+  },
+  {
+    "base_query_sentence": "I am looking for a Chevrolet Extended Cab Pickup with a AUTOMATIC transmission and four wheel drive.",
+    "full_query_sentence": "I am looking for a Chevrolet Extended Cab Pickup with a AUTOMATIC transmission and four wheel drive, has MSRP at most $35,492, is from 2016 or newer, is large size, runs on regular unleaded.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 35492
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 35492,
+        "weight": 0.39265076646162494
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016,
+        "weight": 0.09490840675652283
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.3615947215042368
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.15084610527761538
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2016,
+      "weight": 0.09490840675652283
+    },
+    "recommended_car": {
+      "Make": "Chevrolet",
+      "Model": "C/K 1500 Series",
+      "Year": 1999,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "four wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Extended Cab Pickup",
+      "city mpg": 13,
+      "highway MPG": 17,
+      "MSRP": 4098
+    },
+    "meta": {
+      "U_size": 44,
+      "tight_score": 17,
+      "drop_counts": [
+        4,
+        9,
+        3,
+        1
+      ]
+    },
+    "persona": "I\u2019m looking for a Chevrolet Extended Cab Pickup with an automatic transmission and four-wheel drive, mainly for capability and everyday usefulness. My top priority is keeping MSRP at most $35,492, because budget is a big deal for me and I\u2019m not eager to stretch too far. I also strongly prefer it to be Large, since I want the space and truck feel, and I\u2019m only mildly willing to compromise there. I want it to run on regular unleaded, and I\u2019m fairly committed to that for convenience and cost. I\u2019d like it to be 2016 or newer, but I\u2019m quite flexible on the year compared to price and size."
+  },
+  {
+    "base_query_sentence": "I am looking for a Ford Crew Cab Pickup with a AUTOMATIC transmission and rear wheel drive.",
+    "full_query_sentence": "I am looking for a Ford Crew Cab Pickup with a AUTOMATIC transmission and rear wheel drive, has MSRP at most $32,545, is from 2010 or newer, gets at least 21 highway MPG, runs on regular unleaded.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 32545
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2010
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 21
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 32545,
+        "weight": 0.16091479315132987
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2010,
+        "weight": 0.12574767212584992
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 21,
+        "weight": 0.2548041946795677
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.4585333400432524
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2010,
+      "weight": 0.12574767212584992
+    },
+    "recommended_car": {
+      "Make": "Ford",
+      "Model": "Explorer Sport Trac",
+      "Year": 2009,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "rear wheel drive",
+      "Vehicle Size": "Compact",
+      "Vehicle Style": "Crew Cab Pickup",
+      "city mpg": 15,
+      "highway MPG": 21,
+      "MSRP": 27295
+    },
+    "meta": {
+      "U_size": 44,
+      "tight_score": 19,
+      "drop_counts": [
+        14,
+        3,
+        1,
+        1
+      ]
+    },
+    "persona": "I\u2019m searching for a Ford Crew Cab Pickup with an automatic transmission and rear-wheel drive as a practical truck I can rely on. The one thing I care about most is that it runs on regular unleaded, because I want fueling to be simple and affordable and I\u2019m not really willing to compromise on that. I\u2019m also aiming for at least 21 highway MPG, which matters quite a bit to me, though I could bend slightly if the truck is a great overall fit. I\u2019d like it to be 2010 or newer, but I\u2019m fairly flexible on the year if it meets my main priorities. For MSRP, I\u2019m targeting at most $32,545, though I\u2019m moderately flexible there if it truly checks the important boxes."
+  },
+  {
+    "base_query_sentence": "I am looking for a Chevrolet 4dr SUV with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Chevrolet 4dr SUV with a AUTOMATIC transmission and front wheel drive, is midsize size, runs on regular unleaded, gets at least 17 city MPG, has MSRP at most $29,728.",
+    "additional_constraints": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize"
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 17
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 29728
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize",
+        "weight": 0.25818334524625025
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.38315882509989946
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 17,
+        "weight": 0.16231107880061862
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 29728,
+        "weight": 0.19634675085323167
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "city mpg",
+      "op": ">=",
+      "value": 17,
+      "weight": 0.16231107880061862
+    },
+    "recommended_car": {
+      "Make": "Chevrolet",
+      "Model": "Traverse",
+      "Year": 2016,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 15,
+      "highway MPG": 22,
+      "MSRP": 28700
+    },
+    "meta": {
+      "U_size": 50,
+      "tight_score": 39,
+      "drop_counts": [
+        21,
+        12,
+        2,
+        4
+      ]
+    },
+    "persona": "I want a Chevrolet 4-door SUV with an automatic transmission and front-wheel drive that works well for everyday life. My biggest priority is that it runs on regular unleaded, because I want easy ownership costs and I\u2019m not very willing to compromise on fuel type. I also care a lot about it being Midsize, since I want a comfortable middle ground for space and drivability. I\u2019m aiming to keep MSRP at most $29,728, and I\u2019m somewhat flexible, but I do want to stay in that range if I can. I\u2019d like at least 17 city MPG, but that\u2019s the easiest one for me to compromise on compared to the fuel type and size."
+  },
+  {
+    "base_query_sentence": "I am looking for a Ford 4dr SUV with a AUTOMATIC transmission and all wheel drive.",
+    "full_query_sentence": "I am looking for a Ford 4dr SUV with a AUTOMATIC transmission and all wheel drive, is a Explorer, is from 2017 or newer, has MSRP at most $37,845, gets at least 17 city MPG.",
+    "additional_constraints": [
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Explorer"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 37845
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 17
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Explorer",
+        "weight": 0.14443475683180795
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017,
+        "weight": 0.34913425172707874
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 37845,
+        "weight": 0.33853342157959826
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 17,
+        "weight": 0.16789756986151488
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Model",
+      "op": "==",
+      "value": "Explorer",
+      "weight": 0.14443475683180795
+    },
+    "recommended_car": {
+      "Make": "Ford",
+      "Model": "Escape",
+      "Year": 2017,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "all wheel drive",
+      "Vehicle Size": "Compact",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 22,
+      "highway MPG": 28,
+      "MSRP": 26850
+    },
+    "meta": {
+      "U_size": 38,
+      "tight_score": 10,
+      "drop_counts": [
+        5,
+        2,
+        1,
+        2
+      ]
+    },
+    "persona": "I\u2019m looking for a Ford 4-door SUV with an automatic transmission and all-wheel drive because I want something confident and easy in any weather. I\u2019m pretty strict about it being 2017 or newer, and I also really care about keeping the MSRP at most $37,845, so those two are my biggest priorities. I\u2019d like it to get at least 17 city MPG, but I can compromise a bit there if the SUV feels like a great overall fit. Ideally it would be an Explorer, but I\u2019m flexible on the exact model if everything else lines up well."
+  },
+  {
+    "base_query_sentence": "I am looking for a Volkswagen Sedan with a AUTOMATED_MANUAL transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Volkswagen Sedan with a AUTOMATED_MANUAL transmission and front wheel drive, has MSRP at most $30,013, gets at least 24 city MPG, runs on premium unleaded (required), is from 2015 or newer.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 30013
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 24
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2015
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 30013,
+        "weight": 0.2704154188679911
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 24,
+        "weight": 0.22244955437017142
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)",
+        "weight": 0.3928145563350969
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2015,
+        "weight": 0.1143204704267405
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2015,
+      "weight": 0.1143204704267405
+    },
+    "recommended_car": {
+      "Make": "Volkswagen",
+      "Model": "Jetta Hybrid",
+      "Year": 2014,
+      "Engine Fuel Type": "premium unleaded (required)",
+      "Transmission Type": "AUTOMATED_MANUAL",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 42,
+      "highway MPG": 48,
+      "MSRP": 25560
+    },
+    "meta": {
+      "U_size": 75,
+      "tight_score": 13,
+      "drop_counts": [
+        2,
+        1,
+        5,
+        5
+      ]
+    },
+    "persona": "I want a Volkswagen sedan with an automated manual transmission and front-wheel drive, mainly for a smooth daily commuter vibe. The fuel requirement is the big one for me\u2014I\u2019m quite firm that it needs premium unleaded (required), since that\u2019s non-negotiable in my mind. I\u2019m aiming for MSRP no more than $30,013 and at least 24 city MPG, and I care about both, but I can be a little flexible if the car is otherwise perfect. I\u2019d prefer 2015 or newer, though I\u2019m noticeably more willing to compromise on the year than on the fuel type."
+  },
+  {
+    "base_query_sentence": "I am looking for a GMC Crew Cab Pickup with a AUTOMATIC transmission and rear wheel drive.",
+    "full_query_sentence": "I am looking for a GMC Crew Cab Pickup with a AUTOMATIC transmission and rear wheel drive, gets at least 17 city MPG, is from 2016 or newer, runs on regular unleaded, is large size.",
+    "additional_constraints": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 17
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 17,
+        "weight": 0.12391267237298903
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016,
+        "weight": 0.255304365177217
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.1932605630693948
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.4275223993803993
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "city mpg",
+      "op": ">=",
+      "value": 17,
+      "weight": 0.12391267237298903
+    },
+    "recommended_car": {
+      "Make": "GMC",
+      "Model": "Sierra 1500",
+      "Year": 2017,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "rear wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Crew Cab Pickup",
+      "city mpg": 16,
+      "highway MPG": 23,
+      "MSRP": 38115
+    },
+    "meta": {
+      "U_size": 52,
+      "tight_score": 28,
+      "drop_counts": [
+        12,
+        6,
+        4,
+        6
+      ]
+    },
+    "persona": "I\u2019m looking for a GMC Crew Cab Pickup with an automatic transmission and rear-wheel drive, basically a big, capable truck that still feels manageable day-to-day. The Large size is my top priority\u2014I really want that full-size feel and I\u2019m not keen to compromise much there. I also strongly prefer it runs on regular unleaded, and I\u2019d like it to be 2016 or newer, though I\u2019m a bit more flexible on the year than on size. I\u2019m aiming for at least 17 city MPG, but that\u2019s the one I\u2019m most willing to bend on if the truck checks the other boxes."
+  },
+  {
+    "base_query_sentence": "I am looking for a Chevrolet 4dr SUV with a AUTOMATIC transmission and four wheel drive.",
+    "full_query_sentence": "I am looking for a Chevrolet 4dr SUV with a AUTOMATIC transmission and four wheel drive, is large size, is from 2008 or newer, has MSRP at most $50,043, runs on regular unleaded.",
+    "additional_constraints": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2008
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 50043
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.27237303306463484
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2008,
+        "weight": 0.21854332509281754
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 50043,
+        "weight": 0.2503121335590296
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.2587715082835179
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2008,
+      "weight": 0.21854332509281754
+    },
+    "recommended_car": {
+      "Make": "Chevrolet",
+      "Model": "Tahoe Limited/Z71",
+      "Year": 2000,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "four wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 11,
+      "highway MPG": 15,
+      "MSRP": 3465
+    },
+    "meta": {
+      "U_size": 48,
+      "tight_score": 20,
+      "drop_counts": [
+        8,
+        7,
+        3,
+        2
+      ]
+    },
+    "persona": "I want a Chevrolet 4-door SUV with an automatic transmission and four-wheel drive, mostly because I want something confident and roomy. I care about a balanced mix here: keeping MSRP at most $50,043, having Large size, and running on regular unleaded all matter quite a bit to me. I\u2019d like it to be 2008 or newer, but I\u2019m the most flexible on the year compared to the other constraints. Overall, I\u2019m trying to stay practical\u2014big SUV comfort without drifting into a fuel or price headache."
+  },
+  {
+    "base_query_sentence": "I am looking for a GMC 4dr SUV with a AUTOMATIC transmission and four wheel drive.",
+    "full_query_sentence": "I am looking for a GMC 4dr SUV with a AUTOMATIC transmission and four wheel drive, is large size, gets at least 19 highway MPG, runs on regular unleaded, has MSRP at most $51,401.",
+    "additional_constraints": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 19
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 51401
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.2959040554974523
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 19,
+        "weight": 0.3379333338424237
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.11472063013963614
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 51401,
+        "weight": 0.25144198052048783
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Engine Fuel Type",
+      "op": "==",
+      "value": "regular unleaded",
+      "weight": 0.11472063013963614
+    },
+    "recommended_car": {
+      "Make": "GMC",
+      "Model": "Yukon",
+      "Year": 2015,
+      "Engine Fuel Type": "flex-fuel (unleaded/E85)",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "four wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 16,
+      "highway MPG": 22,
+      "MSRP": 50740
+    },
+    "meta": {
+      "U_size": 55,
+      "tight_score": 32,
+      "drop_counts": [
+        12,
+        12,
+        2,
+        6
+      ]
+    },
+    "persona": "I\u2019m looking for a GMC 4-door SUV with an automatic transmission and four-wheel drive that feels big, capable, and road-trip friendly. My strongest preference is getting at least 19 highway MPG, since I really want it to be reasonably efficient on longer drives. I also care a lot about it being Large and keeping MSRP at most $51,401, but I can compromise slightly if the SUV feels like the right overall package. I\u2019d prefer regular unleaded, yet I\u2019m pretty flexible on fuel type compared to the mileage and overall value."
+  },
+  {
+    "base_query_sentence": "I am looking for a Dodge Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Dodge Sedan with a AUTOMATIC transmission and front wheel drive, has MSRP at most $20,255, is from 2005 or newer, is a Stratus, gets at least 27 highway MPG.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 20255
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2005
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Stratus"
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 27
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 20255,
+        "weight": 0.12045696701954627
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2005,
+        "weight": 0.21211357357509011
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Stratus",
+        "weight": 0.31712632731280965
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 27,
+        "weight": 0.3503031320925541
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "MSRP",
+      "op": "<=",
+      "value": 20255,
+      "weight": 0.12045696701954627
+    },
+    "recommended_car": {
+      "Make": "Dodge",
+      "Model": "Stratus",
+      "Year": 2006,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 20,
+      "highway MPG": 27,
+      "MSRP": 20825
+    },
+    "meta": {
+      "U_size": 48,
+      "tight_score": 5,
+      "drop_counts": [
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    "persona": "I want a Dodge sedan with an automatic transmission and front-wheel drive that\u2019s simple, affordable, and familiar. The biggest thing for me is getting at least 27 highway MPG, and I also strongly prefer it to be a Stratus, since that model is a major part of what I\u2019m after. I\u2019d like it to be 2005 or newer, and I care about that, but I\u2019m not as rigid on the year as I am on highway efficiency and the model. I\u2019m aiming for MSRP at most $20,255, though I\u2019m willing to compromise a bit on price if the car fits the rest of my needs."
+  },
+  {
+    "base_query_sentence": "I am looking for a Audi Sedan with a AUTOMATIC transmission and all wheel drive.",
+    "full_query_sentence": "I am looking for a Audi Sedan with a AUTOMATIC transmission and all wheel drive, is large size, is from 2016 or newer, gets at least 36 highway MPG, has MSRP at most $69,180.",
+    "additional_constraints": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 36
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 69180
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.4355555910519511
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016,
+        "weight": 0.12317446606280025
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 36,
+        "weight": 0.26300577927848645
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 69180,
+        "weight": 0.17826416360676212
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2016,
+      "weight": 0.12317446606280025
+    },
+    "recommended_car": {
+      "Make": "Audi",
+      "Model": "A7",
+      "Year": 2015,
+      "Engine Fuel Type": "diesel",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "all wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Sedan",
+      "city mpg": 24,
+      "highway MPG": 38,
+      "MSRP": 68300
+    },
+    "meta": {
+      "U_size": 49,
+      "tight_score": 7,
+      "drop_counts": [
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    "persona": "I\u2019m looking for an Audi sedan with an automatic transmission and all-wheel drive, aiming for something upscale that still feels practical. The Large size is my top priority\u2014I really want that spacious, premium feel and I\u2019m not very willing to compromise there. I also care a lot about getting at least 36 highway MPG, and I want MSRP at most $69,180, though I can be a little flexible on price if it truly delivers. I\u2019d prefer 2016 or newer, but I\u2019m noticeably more willing to compromise on the year than on size or highway mileage."
+  },
+  {
+    "base_query_sentence": "I am looking for a BMW 4dr SUV with a AUTOMATIC transmission and all wheel drive.",
+    "full_query_sentence": "I am looking for a BMW 4dr SUV with a AUTOMATIC transmission and all wheel drive, gets at least 28 highway MPG, is from 2017 or newer, is a X5, has MSRP at most $58,340.",
+    "additional_constraints": [
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 28
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "X5"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 58340
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 28,
+        "weight": 0.4550445741756589
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017,
+        "weight": 0.143573185036934
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "X5",
+        "weight": 0.18012064147983017
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 58340,
+        "weight": 0.2212615993075769
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2017,
+      "weight": 0.143573185036934
+    },
+    "recommended_car": {
+      "Make": "BMW",
+      "Model": "X5",
+      "Year": 2015,
+      "Engine Fuel Type": "diesel",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "all wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 24,
+      "highway MPG": 31,
+      "MSRP": 57700
+    },
+    "meta": {
+      "U_size": 43,
+      "tight_score": 8,
+      "drop_counts": [
+        1,
+        2,
+        4,
+        1
+      ]
+    },
+    "persona": "I want a BMW 4-door SUV with an automatic transmission and all-wheel drive, mostly for a confident, comfortable daily drive. The biggest priority for me is getting at least 28 highway MPG, because efficiency on longer drives really matters and I\u2019m not eager to compromise there. I\u2019m aiming to keep MSRP at most $58,340, and I care about budget, but I can bend if the value is clearly there. I\u2019d prefer a 2017 or newer X5, yet I\u2019m more flexible on the year and even the exact model than I am on highway mileage."
+  },
+  {
+    "base_query_sentence": "I am looking for a Buick Sedan with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Buick Sedan with a AUTOMATIC transmission and front wheel drive, gets at least 30 highway MPG, is from 2017 or newer, is a Regal, gets at least 21 city MPG.",
+    "additional_constraints": [
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 30
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Regal"
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 21
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 30,
+        "weight": 0.11398725399587954
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017,
+        "weight": 0.41079145205343737
+      },
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Regal",
+        "weight": 0.3249862524855994
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 21,
+        "weight": 0.15023504146508368
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "highway MPG",
+      "op": ">=",
+      "value": 30,
+      "weight": 0.11398725399587954
+    },
+    "recommended_car": {
+      "Make": "Buick",
+      "Model": "Regal",
+      "Year": 2017,
+      "Engine Fuel Type": "premium unleaded (recommended)",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 21,
+      "highway MPG": 29,
+      "MSRP": 28615
+    },
+    "meta": {
+      "U_size": 84,
+      "tight_score": 16,
+      "drop_counts": [
+        3,
+        5,
+        7,
+        1
+      ]
+    },
+    "persona": "I\u2019m looking for a Buick sedan with an automatic transmission and front-wheel drive that feels comfortable but still efficient. My top priority is it being 2017 or newer, because I really want something current and I\u2019m not very willing to compromise on the year. I also strongly prefer it to be a Regal, since that model matters a lot to me. I\u2019m aiming for at least 21 city MPG, and I\u2019d like at least 30 highway MPG, but I\u2019m most flexible on the highway number if the year and model match perfectly."
+  },
+  {
+    "base_query_sentence": "I am looking for a Audi Sedan with a AUTOMATED_MANUAL transmission and all wheel drive.",
+    "full_query_sentence": "I am looking for a Audi Sedan with a AUTOMATED_MANUAL transmission and all wheel drive, is midsize size, runs on premium unleaded (required), has MSRP at most $67,940, is from 2017 or newer.",
+    "additional_constraints": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize"
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 67940
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize",
+        "weight": 0.30925538558126797
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)",
+        "weight": 0.1358374501880414
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 67940,
+        "weight": 0.3558383328729259
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017,
+        "weight": 0.1990688313577647
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Engine Fuel Type",
+      "op": "==",
+      "value": "premium unleaded (required)",
+      "weight": 0.1358374501880414
+    },
+    "recommended_car": {
+      "Make": "Audi",
+      "Model": "A4",
+      "Year": 2017,
+      "Engine Fuel Type": "premium unleaded (recommended)",
+      "Transmission Type": "AUTOMATED_MANUAL",
+      "Driven_Wheels": "all wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Sedan",
+      "city mpg": 24,
+      "highway MPG": 31,
+      "MSRP": 39400
+    },
+    "meta": {
+      "U_size": 35,
+      "tight_score": 14,
+      "drop_counts": [
+        2,
+        4,
+        2,
+        6
+      ]
+    },
+    "persona": "I want an Audi sedan with an automated manual transmission and all-wheel drive, something sporty but still everyday-usable. I care most about keeping MSRP at most $67,940 and having a Midsize feel, since budget and the right \u201cnot too big, not too small\u201d footprint are my main priorities. I\u2019d prefer 2017 or newer, and that\u2019s fairly important, but I could compromise a bit if the car is a great deal. I\u2019m aiming for premium unleaded (required), though I\u2019m more flexible on fuel than I am on price and size."
+  },
+  {
+    "base_query_sentence": "I am looking for a Chevrolet 4dr SUV with a AUTOMATIC transmission and rear wheel drive.",
+    "full_query_sentence": "I am looking for a Chevrolet 4dr SUV with a AUTOMATIC transmission and rear wheel drive, is from 2009 or newer, gets at least 15 city MPG, has MSRP at most $46,580, runs on regular unleaded.",
+    "additional_constraints": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2009
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 15
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 46580
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2009,
+        "weight": 0.1230282225321847
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 15,
+        "weight": 0.15567726929827275
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 46580,
+        "weight": 0.3432316914052284
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.37806281676431414
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2009,
+      "weight": 0.1230282225321847
+    },
+    "recommended_car": {
+      "Make": "Chevrolet",
+      "Model": "Tracker",
+      "Year": 2004,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "rear wheel drive",
+      "Vehicle Size": "Compact",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 17,
+      "highway MPG": 20,
+      "MSRP": 19865
+    },
+    "meta": {
+      "U_size": 50,
+      "tight_score": 13,
+      "drop_counts": [
+        6,
+        3,
+        3,
+        1
+      ]
+    },
+    "persona": "I\u2019m looking for a Chevrolet 4-door SUV with an automatic transmission and rear-wheel drive, something practical that won\u2019t feel like a money pit. My biggest priority is that it runs on regular unleaded, and I\u2019m also pretty strict about keeping MSRP at most $46,580, since fuel simplicity and budget control matter most to me. I\u2019d like it to get at least 15 city MPG, but I\u2019m fairly flexible on mileage if the SUV is otherwise a great match. I\u2019m aiming for 2009 or newer, though I can compromise on year more than anything else if the price and fuel type are right."
+  },
+  {
+    "base_query_sentence": "I am looking for a Volkswagen 4dr SUV with a AUTOMATIC transmission and all wheel drive.",
+    "full_query_sentence": "I am looking for a Volkswagen 4dr SUV with a AUTOMATIC transmission and all wheel drive, is midsize size, runs on premium unleaded (recommended), has MSRP at most $56,670, gets at least 18 city MPG.",
+    "additional_constraints": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize"
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (recommended)"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 56670
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 18
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize",
+        "weight": 0.23451887537334568
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (recommended)",
+        "weight": 0.3645289197653438
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 56670,
+        "weight": 0.2456431901302638
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 18,
+        "weight": 0.15530901473104664
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "city mpg",
+      "op": ">=",
+      "value": 18,
+      "weight": 0.15530901473104664
+    },
+    "recommended_car": {
+      "Make": "Volkswagen",
+      "Model": "Touareg",
+      "Year": 2016,
+      "Engine Fuel Type": "premium unleaded (recommended)",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "all wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 17,
+      "highway MPG": 23,
+      "MSRP": 42705
+    },
+    "meta": {
+      "U_size": 37,
+      "tight_score": 28,
+      "drop_counts": [
+        13,
+        4,
+        1,
+        10
+      ]
+    },
+    "persona": "I want a Volkswagen 4-door SUV with an automatic transmission and all-wheel drive, mainly for a confident, comfortable daily driver. I care most about it using premium unleaded (recommended) and staying Midsize, because I want that specific balance of performance feel and practical size. I\u2019m trying to keep MSRP at most $56,670, and I\u2019m moderately flexible, but I\u2019d rather not push beyond that unless it\u2019s truly worth it. I\u2019d like at least 18 city MPG, though I\u2019m the most willing to compromise on city mileage if everything else lines up nicely."
+  },
+  {
+    "base_query_sentence": "I am looking for a Infiniti Sedan with a AUTOMATIC transmission and rear wheel drive.",
+    "full_query_sentence": "I am looking for a Infiniti Sedan with a AUTOMATIC transmission and rear wheel drive, is large size, runs on premium unleaded (recommended), has MSRP at most $53,700, is from 2013 or newer.",
+    "additional_constraints": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (recommended)"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 53700
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2013
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.20637318556287518
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (recommended)",
+        "weight": 0.235604453162729
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 53700,
+        "weight": 0.42451011181236464
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2013,
+        "weight": 0.13351224946203116
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2013,
+      "weight": 0.13351224946203116
+    },
+    "recommended_car": {
+      "Make": "Infiniti",
+      "Model": "M35",
+      "Year": 2010,
+      "Engine Fuel Type": "premium unleaded (recommended)",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "rear wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Sedan",
+      "city mpg": 17,
+      "highway MPG": 25,
+      "MSRP": 45800
+    },
+    "meta": {
+      "U_size": 79,
+      "tight_score": 21,
+      "drop_counts": [
+        7,
+        6,
+        4,
+        4
+      ]
+    },
+    "persona": "I\u2019m looking for an Infiniti sedan with an automatic transmission and rear-wheel drive that feels smooth, spacious, and a little upscale. The biggest thing for me is keeping MSRP at most $53,700, because I want the luxury vibe without overpaying. I also prefer it to run on premium unleaded (recommended) and to be Large, but I\u2019m a bit more flexible on those than I am on price. I\u2019m aiming for 2013 or newer, though I can compromise on the year if the car feels like a strong value overall."
+  },
+  {
+    "base_query_sentence": "I am looking for a Subaru 4dr SUV with a AUTOMATIC transmission and all wheel drive.",
+    "full_query_sentence": "I am looking for a Subaru 4dr SUV with a AUTOMATIC transmission and all wheel drive, is from 2016 or newer, gets at least 33 highway MPG, has MSRP at most $24,895, is midsize size.",
+    "additional_constraints": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 33
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 24895
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize"
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2016,
+        "weight": 0.09554687460647286
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 33,
+        "weight": 0.2306508360927225
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 24895,
+        "weight": 0.34487906601952706
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize",
+        "weight": 0.32892322328127765
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2016,
+      "weight": 0.09554687460647286
+    },
+    "recommended_car": {
+      "Make": "Subaru",
+      "Model": "Outback",
+      "Year": 2015,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "all wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "4dr SUV",
+      "city mpg": 25,
+      "highway MPG": 33,
+      "MSRP": 24895
+    },
+    "meta": {
+      "U_size": 89,
+      "tight_score": 11,
+      "drop_counts": [
+        1,
+        2,
+        6,
+        2
+      ]
+    },
+    "persona": "I want a Subaru 4-door SUV with an automatic transmission and all-wheel drive, mostly because I need something dependable and great in bad weather. My top priorities are keeping MSRP at most $24,895 and making sure it\u2019s Midsize, since I\u2019m trying to stay budget-smart without going too small. I also care about getting at least 33 highway MPG, and I\u2019m fairly serious about that because efficiency matters on longer drives. I\u2019d like 2016 or newer, but I\u2019m the most flexible on model year if the SUV nails the price, size, and highway mileage."
+  },
+  {
+    "base_query_sentence": "I am looking for a GMC Crew Cab Pickup with a AUTOMATIC transmission and four wheel drive.",
+    "full_query_sentence": "I am looking for a GMC Crew Cab Pickup with a AUTOMATIC transmission and four wheel drive, has MSRP at most $43,210, is from 2013 or newer, is large size, gets at least 23 highway MPG.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 43210
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2013
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 23
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 43210,
+        "weight": 0.29177491069458245
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2013,
+        "weight": 0.0972591410152553
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.3243708063229622
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 23,
+        "weight": 0.28659514196719993
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Year",
+      "op": ">=",
+      "value": 2013,
+      "weight": 0.0972591410152553
+    },
+    "recommended_car": {
+      "Make": "GMC",
+      "Model": "Sierra 1500 Hybrid",
+      "Year": 2011,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "four wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Crew Cab Pickup",
+      "city mpg": 20,
+      "highway MPG": 23,
+      "MSRP": 42245
+    },
+    "meta": {
+      "U_size": 51,
+      "tight_score": 20,
+      "drop_counts": [
+        2,
+        2,
+        8,
+        8
+      ]
+    },
+    "persona": "I\u2019m looking for a GMC Crew Cab Pickup with an automatic transmission and four-wheel drive\u2014something capable, roomy, and ready for real use. The most important thing for me is that it\u2019s Large, and I also care a lot about keeping MSRP at most $43,210, so size and budget are my main anchors. I\u2019m aiming for at least 23 highway MPG, and that matters quite a bit, though I could compromise slightly if the truck otherwise feels perfect. I\u2019d like 2013 or newer, but I\u2019m relatively flexible on year compared to the other priorities."
+  },
+  {
+    "base_query_sentence": "I am looking for a Cadillac Sedan with a AUTOMATIC transmission and rear wheel drive.",
+    "full_query_sentence": "I am looking for a Cadillac Sedan with a AUTOMATIC transmission and rear wheel drive, is large size, has MSRP at most $58,010, runs on premium unleaded (required), gets at least 16 city MPG.",
+    "additional_constraints": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 58010
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)"
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 16
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Large",
+        "weight": 0.1601295187393867
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 58010,
+        "weight": 0.2906189557628308
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (required)",
+        "weight": 0.12167228604958416
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 16,
+        "weight": 0.4275792394481983
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "Engine Fuel Type",
+      "op": "==",
+      "value": "premium unleaded (required)",
+      "weight": 0.12167228604958416
+    },
+    "recommended_car": {
+      "Make": "Cadillac",
+      "Model": "CTS",
+      "Year": 2017,
+      "Engine Fuel Type": "premium unleaded (recommended)",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "rear wheel drive",
+      "Vehicle Size": "Large",
+      "Vehicle Style": "Sedan",
+      "city mpg": 22,
+      "highway MPG": 30,
+      "MSRP": 45995
+    },
+    "meta": {
+      "U_size": 76,
+      "tight_score": 29,
+      "drop_counts": [
+        1,
+        6,
+        21,
+        1
+      ]
+    },
+    "persona": "I want a Cadillac sedan with an automatic transmission and rear-wheel drive that feels comfortable, confident, and properly premium. The biggest thing for me is getting at least 16 city MPG, because I do enough city driving that I don\u2019t want something that guzzles fuel. I\u2019m also trying to keep MSRP at most $58,010, and I care about staying under that, though I\u2019m somewhat flexible if the car feels like a great deal. I\u2019d like it to be Large, but I can compromise on exact size more easily than I can compromise on city mileage. Ideally it runs on premium unleaded (required), but I\u2019m the most willing to bend on fuel requirement if everything else is excellent."
+  },
+  {
+    "base_query_sentence": "I am looking for a Volkswagen 2dr Hatchback with a AUTOMATED_MANUAL transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Volkswagen 2dr Hatchback with a AUTOMATED_MANUAL transmission and front wheel drive, is a Beetle, gets at least 31 highway MPG, runs on premium unleaded (recommended), has MSRP at most $26,550.",
+    "additional_constraints": [
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Beetle"
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 31
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (recommended)"
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 26550
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Model",
+        "op": "==",
+        "value": "Beetle",
+        "weight": 0.2727828223648845
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 31,
+        "weight": 0.29700006931000433
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "premium unleaded (recommended)",
+        "weight": 0.2845491366287538
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 26550,
+        "weight": 0.1456679716963573
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "MSRP",
+      "op": "<=",
+      "value": 26550,
+      "weight": 0.1456679716963573
+    },
+    "recommended_car": {
+      "Make": "Volkswagen",
+      "Model": "Beetle",
+      "Year": 2016,
+      "Engine Fuel Type": "premium unleaded (recommended)",
+      "Transmission Type": "AUTOMATED_MANUAL",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Compact",
+      "Vehicle Style": "2dr Hatchback",
+      "city mpg": 24,
+      "highway MPG": 31,
+      "MSRP": 27095
+    },
+    "meta": {
+      "U_size": 44,
+      "tight_score": 15,
+      "drop_counts": [
+        7,
+        2,
+        2,
+        4
+      ]
+    },
+    "persona": "I\u2019m looking for a Volkswagen 2-door hatchback with an automated manual transmission and front-wheel drive\u2014something fun, distinctive, and easy to park. The biggest thing for me is that it\u2019s specifically a Beetle, and I also care a lot about getting at least 31 highway MPG and using premium unleaded (recommended), since I want it to feel efficient and a bit punchy. I\u2019m aiming for MSRP at most $26,550, but I\u2019m fairly flexible on price if it\u2019s the exact Beetle setup I want. Overall, I\u2019m more willing to compromise on budget than on the model and the general driving vibe."
+  },
+  {
+    "base_query_sentence": "I am looking for a Chevrolet Sedan with a MANUAL transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Chevrolet Sedan with a MANUAL transmission and front wheel drive, is from 2009 or newer, is compact size, gets at least 28 city MPG, has MSRP at most $16,620.",
+    "additional_constraints": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2009
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Compact"
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 28
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 16620
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2009,
+        "weight": 0.40501007415996326
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Compact",
+        "weight": 0.19444191844460657
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 28,
+        "weight": 0.15109690744508675
+      },
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 16620,
+        "weight": 0.2494510999503434
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "city mpg",
+      "op": ">=",
+      "value": 28,
+      "weight": 0.15109690744508675
+    },
+    "recommended_car": {
+      "Make": "Chevrolet",
+      "Model": "Sonic",
+      "Year": 2016,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "MANUAL",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Compact",
+      "Vehicle Style": "Sedan",
+      "city mpg": 26,
+      "highway MPG": 35,
+      "MSRP": 14345
+    },
+    "meta": {
+      "U_size": 60,
+      "tight_score": 26,
+      "drop_counts": [
+        2,
+        1,
+        20,
+        3
+      ]
+    },
+    "persona": "I want a Chevrolet sedan with a manual transmission and front-wheel drive, something compact and straightforward with a little driver involvement. My top priority is that it\u2019s 2009 or newer, because I don\u2019t want to deal with something too old or outdated. I also care about keeping MSRP at most $16,620, and I\u2019m fairly serious about that budget cap. I prefer it to be Compact, but I can compromise a bit on size if the car otherwise fits. I\u2019m aiming for at least 28 city MPG, though I\u2019m the most flexible on city mileage if the year and price are right."
+  },
+  {
+    "base_query_sentence": "I am looking for a Toyota 4dr Hatchback with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Toyota 4dr Hatchback with a AUTOMATIC transmission and front wheel drive, has MSRP at most $24,495, gets at least 36 highway MPG, gets at least 30 city MPG, is from 2017 or newer.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 24495
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 36
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 30
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 24495,
+        "weight": 0.24995089131692935
+      },
+      {
+        "column": "highway MPG",
+        "op": ">=",
+        "value": 36,
+        "weight": 0.17908798699008913
+      },
+      {
+        "column": "city mpg",
+        "op": ">=",
+        "value": 30,
+        "weight": 0.2860285606949742
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2017,
+        "weight": 0.28493256099800746
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "highway MPG",
+      "op": ">=",
+      "value": 36,
+      "weight": 0.17908798699008913
+    },
+    "recommended_car": {
+      "Make": "Toyota",
+      "Model": "Yaris",
+      "Year": 2017,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Compact",
+      "Vehicle Style": "4dr Hatchback",
+      "city mpg": 30,
+      "highway MPG": 35,
+      "MSRP": 16375
+    },
+    "meta": {
+      "U_size": 50,
+      "tight_score": 35,
+      "drop_counts": [
+        9,
+        3,
+        1,
+        22
+      ]
+    },
+    "persona": "I\u2019m looking for a Toyota 4-door hatchback with an automatic transmission and front-wheel drive\u2014mainly a reliable, efficient daily car. The biggest priorities for me are getting at least 30 city MPG and having it be 2017 or newer, because I really want modern efficiency and a newer feel. I\u2019m also trying to keep MSRP at most $24,495, and I\u2019m moderately flexible, but I\u2019d rather not stretch too much. I\u2019d like at least 36 highway MPG, but I\u2019m more willing to compromise on highway mileage than on city MPG and model year."
+  },
+  {
+    "base_query_sentence": "I am looking for a Volvo Wagon with a AUTOMATIC transmission and front wheel drive.",
+    "full_query_sentence": "I am looking for a Volvo Wagon with a AUTOMATIC transmission and front wheel drive, has MSRP at most $32,850, runs on regular unleaded, is midsize size, is from 2008 or newer.",
+    "additional_constraints": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 32850
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded"
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize"
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2008
+      }
+    ],
+    "constraint_weights": [
+      {
+        "column": "MSRP",
+        "op": "<=",
+        "value": 32850,
+        "weight": 0.16579665975183772
+      },
+      {
+        "column": "Engine Fuel Type",
+        "op": "==",
+        "value": "regular unleaded",
+        "weight": 0.2953523060359058
+      },
+      {
+        "column": "Vehicle Size",
+        "op": "==",
+        "value": "Midsize",
+        "weight": 0.20554690845994056
+      },
+      {
+        "column": "Year",
+        "op": ">=",
+        "value": 2008,
+        "weight": 0.33330412575231605
+      }
+    ],
+    "relaxation_policy": "relax_lowest_weight_constraint",
+    "chosen_relaxation": {
+      "column": "MSRP",
+      "op": "<=",
+      "value": 32850,
+      "weight": 0.16579665975183772
+    },
+    "recommended_car": {
+      "Make": "Volvo",
+      "Model": "V60",
+      "Year": 2017,
+      "Engine Fuel Type": "regular unleaded",
+      "Transmission Type": "AUTOMATIC",
+      "Driven_Wheels": "front wheel drive",
+      "Vehicle Size": "Midsize",
+      "Vehicle Style": "Wagon",
+      "city mpg": 25,
+      "highway MPG": 36,
+      "MSRP": 36150
+    },
+    "meta": {
+      "U_size": 36,
+      "tight_score": 27,
+      "drop_counts": [
+        16,
+        1,
+        2,
+        8
+      ]
+    },
+    "persona": "I want a Volvo wagon with an automatic transmission and front-wheel drive, something practical with a calm, comfortable vibe. My biggest priority is it being 2008 or newer, since I want something that still feels reasonably modern and dependable. I also care a lot about it running on regular unleaded, because I prefer easier fuel costs and hassle-free ownership. I\u2019d like it to be Midsize, and I\u2019m moderately flexible there if it still feels roomy. For MSRP I\u2019m aiming at most $32,850, but I\u2019m the most willing to compromise on price if the year and fuel type fit perfectly."
+  }
+]
